@@ -30,7 +30,10 @@
 }
 
 .race-selection {
-  width: 50%;
+  text-align: center;
+  width: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
   color: red;
   display: inline-block;
 }
