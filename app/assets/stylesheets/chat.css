@@ -1,0 +1,38 @@
+.messages {
+  border: 2px grey solid;
+  height: 100%;
+  display: block;
+}
+
+.sent-message {
+  border: 1px white solid;
+  background-color: grey;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.user-info {
+  float: right;
+}
+
+.time {
+  color: darkgrey;
+}
+
+#chat {
+  overflow-y: scroll;
+  max-height: 40%;
+  width: 90%;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+.avatar {
+  float: right;
+  margin-left: 20px;
+  margin-top: -20px;
+  border-radius: 50%;
+}

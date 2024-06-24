@@ -1,0 +1,15 @@
+<% if @days %>
+<% unless @days.include? message.sent_at %>
+  <h3><%= message.sent_at %></h3>
+  <% @days.append message.sent_at %>
+<% end %>
+<% end %>
+<%= image_tag message.user.avatar_image , class: "avatar" %>
+<div class="sent-message">
+  <span class="user-info">
+    <span class="time"><%= message.timestamp %></span>
+    <strong><%= message.user.name %></strong>
+  </span>
+  <br>
+  <%= message.body %>
+</div>

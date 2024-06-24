@@ -1,0 +1,19 @@
+<div class="center" data-controller="chat">
+  <span>Welcome <%= link_to Current.user.name, "/profile" %></span>
+
+  <h1>World List</h1>
+
+  <h3>Chat</h3>
+  <div id="chat" data-chat-target="messages">
+    <%= turbo_stream_from :messages %>
+    <turbo-frame id="messages">
+      <%= render partial: "shared/message", collection: @messages %>
+    </turbo-frame>
+  </div>
+  <footer>
+    <%= form_tag "/messages", remote: true, data: { action: "chat#sendMessage" } do |f| %>
+      <%= text_field_tag :message, nil, data: { "chat-target": "input" } %>
+      <%= hidden_field_tag :sender, Current.user.id %>
+    <% end %>
+  </footer>
+</div>
