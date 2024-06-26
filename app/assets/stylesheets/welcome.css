@@ -22,3 +22,30 @@
   width: 100%;
   display: block;
 }
+
+.elem {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 10px solid transparent;
+  text-align: center;
+}
+
+.elem:hover {
+  border: 10px solid white;
+  border-image: url(panel-border.png) 30% round;
+  cursor: pointer;
+}
+
+.flip {
+  transform: scale(-1);
+}
+
+.title {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2em;
+}
+
+.signIn {
+  margin-bottom: 20px;
+}
