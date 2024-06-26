@@ -10,7 +10,7 @@ class CreateWorlds < ActiveRecord::Migration[7.1]
     create_table :users do |t|
       t.string :name
       t.integer :gold, default: 10
-      t.string :race, default: "human", null: false
+      t.string :race, default: "Pig", null: false
       t.boolean :first_sign_in, default: true
 
       t.timestamps

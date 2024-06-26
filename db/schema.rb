@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_23_064517) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "gold", default: 10
-    t.string "race", default: "human", null: false
+    t.string "race", default: "Pig", null: false
     t.boolean "first_sign_in", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
