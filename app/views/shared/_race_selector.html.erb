@@ -1,6 +1,6 @@
 <div>
-<i class="arrow left" data-action="click->race-selector#moveLeft"></i>
-<strong class="race-selection" data-race-selector-target="selection"><%= Current.user.race %></strong>
-<i class="arrow right" data-action="click->race-selector#moveRight"></i>
+  <%= image_tag "arrow_left.svg", data: { action: "click->race-selector#moveLeft" } %>
+  <%= image_tag "giraffe.png", class: "race-selection", data: { "race-selector-target": "raceImage" } %>
+  <strong class="hidden" data-race-selector-target="selection"><%= Current.user.race %></strong>
+  <%= image_tag "arrow_right.svg", data: { action: "click->race-selector#moveRight" }, class: "arrow" %>
 </div>
-

@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  allow_no_auth only: [:index, :sign_out]
+  allow_no_auth only: [:sign_out]
 
   def index
     redirect_to "/worlds" if signed_in?

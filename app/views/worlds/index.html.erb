@@ -1,5 +1,5 @@
 <div class="center" data-controller="chat">
-  <span>Welcome <%= link_to Current.user.name, "/profile" %></span>
+  <span>Welcome <%= link_to Current.user.name, "/profile", class: "username" %></span>
 
   <h1>World List</h1>
 
@@ -12,7 +12,7 @@
   </div>
   <footer>
     <%= form_tag "/messages", remote: true, data: { action: "chat#sendMessage" } do |f| %>
-      <%= text_field_tag :message, nil, data: { "chat-target": "input" } %>
+      <%= text_field_tag :message, nil, data: { "chat-target": "input" }, autocomplete: "off", class: "chatMessage" %>
       <%= hidden_field_tag :sender, Current.user.id %>
     <% end %>
   </footer>

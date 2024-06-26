@@ -24,10 +24,24 @@
   overflow-y: scroll;
   max-height: 40%;
   width: 90%;
+  border: 20px solid white;
+  border-image: url(panel-border.png) 30% round;
+}
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+.chatMessage {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
 }
 
 footer {
-  margin-top: 10px;
+  width: 90%;
 }
 
 .avatar {
@@ -35,4 +49,9 @@ footer {
   margin-left: 20px;
   margin-top: -20px;
   border-radius: 50%;
+  width: 32px;
+}
+
+.username {
+  color: yellow;
 }

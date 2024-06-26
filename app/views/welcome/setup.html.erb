@@ -1,4 +1,4 @@
-<div data-controller="race-selector" data-race-selector-opts-value='<%= User.races %>' data-race-selector-current-value='<%= Current.user.race %>'>
+<div data-controller="race-selector" data-race-selector-opts-value='<%= User.races %>' data-race-selector-images-value='<%= race_images %>' data-race-selector-current-value='<%= Current.user.race %>'>
 <%= form_with model: Current.user, method: :put, class: "center" do |form| %>
   <h3>Name</h3>
   <%= form.text_field :name, disabled: true %>

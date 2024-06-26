@@ -7,14 +7,16 @@ var selectionValue = 0
 export default class extends Controller {
   static values = {
     opts: Array,
+    images: Array,
     current: String
   }
-  static targets = [ "selection", "hiddenField" ]
+  static targets = [ "selection", "hiddenField", "raceImage" ]
 
   connect() {
     console.log(this.optsValue)
     console.log(this.currentValue)
     selectionValue = this.optsValue.indexOf(this.currentValue)
+    this.redrawSelection()
   }
 
   moveLeft() {
@@ -38,7 +40,7 @@ export default class extends Controller {
 
   redrawSelection() {
     this.selectionTarget.innerHTML = this.optsValue[selectionValue]
-    console.log(this.targets)
     this.hiddenFieldTarget.value = this.optsValue[selectionValue]
+    this.raceImageTarget.src = this.imagesValue[selectionValue]
   }
 }

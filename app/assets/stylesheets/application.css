@@ -1,1 +1,4 @@
 /* Application styles */
+.hidden {
+  display: none;
+}

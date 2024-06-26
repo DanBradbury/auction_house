@@ -13,11 +13,12 @@ module Auth
 
   private
   def ensure_logged_in
-    if Current.user.present? or user = User.find_by(id: cookies.encrypted[:user_id])
-      Current.user = user
-    else
-      redirect_to root_url
+    if cookies.encrypted[:user_id]
+      Current.user = User.find_by(id: cookies.encrypted[:user_id])
     end
+    #else
+    #  redirect_to root_url
+    #end
   end
 
   def signed_in?
