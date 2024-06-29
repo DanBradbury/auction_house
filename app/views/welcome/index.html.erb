@@ -5,7 +5,7 @@
   <%= image_tag "divider-fade.png", class: "flip" %>
   </div>
   <%= form_with url: "/users" do |form| %>
-    <%= text_field_tag :name %>
+    <%= text_field_tag :name, nil, autocomplete: "off" %>
     <%= button_to "Submit" %>
   <% end %>
   <div>

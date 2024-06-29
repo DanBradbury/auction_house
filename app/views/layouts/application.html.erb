@@ -13,6 +13,7 @@
 
   <body>
     <div class="game">
+      <%= render partial: "shared/header" if Current.user.present? %>
     <%= yield %>
     </div>
   </body>
