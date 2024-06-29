@@ -13,4 +13,14 @@
   position: absolute;
 }
 
+.borderTest {
+  border: 20px solid white;
+  border-image: url("/GUI/frame-border.png") 30% round;
+  /*background-image: url("/GUI/center.png");*/
+}
+.inside {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-image: url("/GUI/center.png");
+}
 
