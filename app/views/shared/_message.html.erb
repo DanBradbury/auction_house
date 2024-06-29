@@ -6,10 +6,12 @@
 <% end %>
 <%= image_tag message.user.avatar_image , class: "avatar" %>
 <div class="sent-message">
-  <span class="user-info">
-    <span class="time"><%= message.timestamp %></span>
-    <strong><%= message.user.name %></strong>
-  </span>
-  <br>
-  <%= message.body %>
+  <div class="inner-sent-message">
+    <span class="user-info">
+      <span class="time"><%= message.timestamp %></span>
+      <strong><%= message.user.name %></strong>
+    </span>
+    <br>
+    <%= message.body %>
+  </div>
 </div>

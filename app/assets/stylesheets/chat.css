@@ -5,11 +5,17 @@
 }
 
 .sent-message {
-  border: 1px white solid;
-  background-color: grey;
+  /*border: 1px white solid;*/
+  /*background-color: grey;*/
   margin-bottom: 10px;
   margin-right: 25px;
   margin-left: 25px;
+  border: 10px solid white;
+  border-image: url("/GUI/detail-border.png") 30% round;
+}
+
+.inner-sent-message {
+  background-color: #8f563b;
 }
 
 .user-info {
@@ -25,8 +31,15 @@
   max-height: 40%;
   width: 90%;
   border: 20px solid white;
-  border-image: url(panel-border.png) 30% round;
+  /*border-image: url(panel-border.png) 30% round;*/
+  border-image: url("GUI/frame-border.png") 30% round;
 }
+.chatContainer {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-image: url("/GUI/center.png");
+}
+
 #borderimg {
   border: 10px solid transparent;
   padding: 15px;
@@ -44,11 +57,11 @@ footer {
   width: 90%;
 }
 
-.avatar {
+#chat .avatar {
   float: right;
   margin-left: 20px;
   margin-top: -20px;
-  border-radius: 50%;
+  border-radius: 20%;
   width: 32px;
 }
 

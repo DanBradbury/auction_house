@@ -13,10 +13,13 @@
   position: absolute;
 }
 
+.header {
+  margin-top: 10px;
+}
+
 .borderTest {
   border: 20px solid white;
   border-image: url("/GUI/frame-border.png") 30% round;
-  /*background-image: url("/GUI/center.png");*/
 }
 .inside {
   padding-top: 1px;
@@ -24,3 +27,16 @@
   background-image: url("/GUI/center.png");
 }
 
+.hud {
+  background-image: url("GUI/hud.png");
+  width: 84px;
+  height: 64px;
+}
+.hud .avatar {
+  position: absolute;
+  height: 32px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.hud .avatar:hover {
+}
