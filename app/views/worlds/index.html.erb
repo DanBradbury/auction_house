@@ -1,19 +1,21 @@
-<div class="center" data-controller="chat">
+<div class="" data-controller="world">
   <h1>World List</h1>
 
-  <h3>Chat</h3>
-  <div id="chat" data-chat-target="messages">
-    <div class="chatContainer">
-    <%= turbo_stream_from :messages %>
-    <turbo-frame id="messages">
-      <%= render partial: "shared/message", collection: @messages %>
-    </turbo-frame>
+
+  <div class="navigation">
+    <div class="button homeButton" data-controller="custom-form" data-action="click->custom-form#submit">
+      <div class="icon">
+        <%= image_tag "GUI/icon_castle.png" %><br>
+        <span>SHOP</span>
+      </div>
+    </div>
+
+    <div class="button homeButton">
+      <div class="icon">
+        <%= image_tag "GUI/icon_book.png" %><br>
+        <span>CHAT</span>
+      </div>
     </div>
   </div>
-  <footer>
-    <%= form_tag "/messages", remote: true, data: { action: "chat#sendMessage" } do |f| %>
-      <%= text_field_tag :message, nil, data: { "chat-target": "input" }, autocomplete: "off", class: "chatMessage" %>
-      <%= hidden_field_tag :sender, Current.user.id %>
-    <% end %>
-  </footer>
+
 </div>

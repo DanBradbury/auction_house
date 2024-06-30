@@ -79,6 +79,46 @@ body {
 .specForm {
 }
 
+.navigation {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  float: left;
+}
+
+.button {
+  width: auto;
+  height: 50px;
+  text-align: center;
+  padding-top: 26px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  cursor: pointer;
+}
+
+.button.homeButton {
+  background-image: url("/GUI/grey-button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  float: left;
+}
+.button .icon {
+  margin-top: -100px;
+  width: auto;
+}
+.button img {
+  margin-bottom: -20px
+}
+
+.button span {
+  margin-top: -20px;
+}
+.button.homeButton:hover {
+  text-shadow: 3px 3px 3px black;
+}
+
 .specButton {
   background-image: url("/GUI/blue-button1.png");
   background-repeat: no-repeat;
