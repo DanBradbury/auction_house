@@ -28,6 +28,13 @@ body {
 
 .game.worlds {
   background-image: url("/GUI/bg-home.png");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
@@ -192,11 +199,19 @@ body {
   /*background-image: url("/GUI/center.png");*/
   /*mask-image: url("GUI/full-frame-mask.png");*/
 }
+.settings {
+  float: right;
+  margin-right: 15px;
+}
+.settings img {
+  width: 64px;
+}
 
 .hud {
   background-image: url("GUI/hud.png");
   width: 84px;
   height: 64px;
+  float: left;
 }
 .hud .avatar {
   position: absolute;

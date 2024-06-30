@@ -1,7 +1,8 @@
 <div class="header">
   <div class="hud">
     <%= image_tag Current.user.avatar_image, class: "avatar" %>
-  </div>
   <span>Welcome <%= link_to Current.user.name, "/profile", class: "username" %></span>
-  <span style="float: right"><%= link_to "Sign Out", sign_out_url %></span>
+  </div>
+  other
+  <%= link_to image_tag("GUI/icon_setting.png"), sign_out_url, class: "settings" %>
 </div>
