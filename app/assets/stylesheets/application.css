@@ -1,4 +1,12 @@
 /* Application styles */
+@font-face {
+  font-family: 'Custom'; /*a name to be used later*/
+  src: url('/GUI/JosefinSans-Bold.ttf'); /*URL to font*/
+}
+
+body {
+  font-family: 'Custom';
+}
 .hidden {
   display: none;
 }
