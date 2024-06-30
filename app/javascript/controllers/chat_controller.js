@@ -6,6 +6,8 @@ export default class extends Controller {
 
   connect() {
     this.messagesTarget.scrollTop = this.messagesTarget.scrollHeight
+    // should be moved elsewhere once chat is in the right place
+    document.getElementById("game").classList.add("worlds")
   }
 
   submitName() {
