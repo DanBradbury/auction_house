@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Custom';
+  font-size: large;
 }
 .hidden {
   display: none;
@@ -73,31 +74,32 @@ body {
 }
 
 .specInput {
-  border: 10px solid white;
+  border: 20px solid white;
   border-image: url("/GUI/input-disabled.png");
   background-image: url("/GUI/input-disabled-bg.png");
   border-image-slice: 30% 30%;
   border-image-repeat: round stretch;
   width: 50%;
-  height: 20px;
+  height: 32px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 20px/50%;
+  border-radius: 30px/50%;
 }
 
 .specInput.active {
-  border: 10px solid white;
+  border: 20px solid white;
   border-image: url("/GUI/chunky-input-field-border.png");
   background-image: url("/GUI/input-bg.png");
   border-image-slice: 30% 30%;
   border-image-repeat: round stretch;
-  border-radius: 20px/50%;
+  border-radius: 30px/50%;
 }
 
 .customField {
+  font-size: large;
   position: absolute;
   margin-top: -1px;
-  height: 20px;
+  height: 32px;
   width: 20%;
   background-color: transparent;
   border: none;

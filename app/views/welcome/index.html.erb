@@ -3,9 +3,9 @@
     <div class="inside">
     <div class="specHeader">Login</div>
       <%= form_with url: "/users", class: "specForm" do |form| %>
-        <div class="specInput">
+        <div class="specInput" data-controller="text-input">
           <%= image_tag "GUI/user-icon.png", class: "input-prompt" %>
-          <%= text_field_tag :name, nil, autocomplete: "off", placeholder: "Enter username", class: "customField" %>
+          <%= text_field_tag :name, nil, autocomplete: "off", placeholder: "Enter username", class: "customField", data: { action: "focus->text-input#active blur->text-input#inactive" } %>
         </div>
 
         <%# image_tag("GUI/blue-button1.png") %>
