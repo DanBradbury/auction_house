@@ -30,14 +30,15 @@
   overflow-y: scroll;
   max-height: 40%;
   width: 90%;
-  border: 20px solid white;
+  border: 60px solid white;
   /*border-image: url(panel-border.png) 30% round;*/
-  border-image: url("GUI/frame-border.png") 30% round;
+  /*border-image: url("GUI/frame-border.png") 30% round;*/
+  border-image: url("/GUI/card-frame.png") 20% round;
 }
 .chatContainer {
   padding-top: 1px;
   padding-bottom: 1px;
-  background-image: url("/GUI/center.png");
+  /*background-image: url("/GUI/center.png");*/
 }
 
 #borderimg {

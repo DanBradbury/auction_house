@@ -18,13 +18,101 @@
 }
 
 .borderTest {
+  width: 50%;
   border: 20px solid white;
-  border-image: url("/GUI/frame-border.png") 30% round;
+  /*border-image: url("/GUI/popup-border.png") 30% round;*/
+  border-image: url("/GUI/popup-border.png") 30% round;
+  border-image-repeat: stretch stretch;
+  background-color: #282334;
+  background-image: url("/GUI/popup-header1.png");
+  background-repeat: repeat-x;
+  background-position-y: -20px;
+  border-radius: 7px;
+  z-index: 2;
 }
+
+.specHeader {
+  /*background-color: black;*/
+  /*margin-left: -20px;*/
+  /*margin-right: -14px;*/
+  margin-top: -12px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  color: #f4d487;
+  /*mask-image: url("GUI/right-frame-mask.png");*/
+  /*mask-size: auto 100%;*/
+}
+.justDiv {
+  background-image: url("/GUI/input-field-border.png");
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+.specForm {
+}
+
+.specButton {
+  background-image: url("/GUI/blue-button1.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.submitButton {
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: transparent;*/
+  /*border: none;*/
+}
+
+.specInput {
+  border: 10px solid white;
+  border-image: url("/GUI/input-disabled.png");
+  background-image: url("/GUI/input-disabled-bg.png");
+  border-image-slice: 30% 30%;
+  border-image-repeat: round stretch;
+  width: 50%;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px/50%;
+}
+
+.specInput.active {
+  border: 10px solid white;
+  border-image: url("/GUI/chunky-input-field-border.png");
+  background-image: url("/GUI/input-bg.png");
+  border-image-slice: 30% 30%;
+  border-image-repeat: round stretch;
+  border-radius: 20px/50%;
+}
+
+.customField {
+  position: absolute;
+  margin-top: -1px;
+  height: 20px;
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.customField:focus{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.input-prompt {
+  width: 35px;
+  margin-top: -7px;
+}
+
 .inside {
   padding-top: 1px;
   padding-bottom: 1px;
-  background-image: url("/GUI/center.png");
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #282334;*/
+  /*background-image: url("/GUI/center.png");*/
+  /*mask-image: url("GUI/full-frame-mask.png");*/
 }
 
 .hud {

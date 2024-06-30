@@ -4,14 +4,23 @@
   <span class="title">Sign In</span>
   <%= image_tag "divider-fade.png", class: "flip" %>
   </div>
-  <%= form_with url: "/users" do |form| %>
-    <%= text_field_tag :name, nil, autocomplete: "off" %>
-    <%= button_to "Submit" %>
-  <% end %>
 
   <div class="borderTest">
     <div class="inside">
-      <div class="elem">Continue</div>
+    <div class="specHeader">Login</div>
+      <%= form_with url: "/users", class: "specForm" do |form| %>
+        <div class="specInput">
+          <%= image_tag "GUI/user-icon.png", class: "input-prompt" %>
+          <%= text_field_tag :name, nil, autocomplete: "off", placeholder: "Enter username", class: "customField" %>
+        </div>
+
+        <%# image_tag("GUI/blue-button1.png") %>
+        <div class="specButton">
+          SUBMIT
+        </div>
+        <%= form.submit "Submit", class: "submitButton" %>
+      <% end %>
+
       <div class="elem">New Game</div>
       <div class="elem">About</div>
     </div>
