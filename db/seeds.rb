@@ -10,3 +10,8 @@
 ["West", "Central", "East"].each do |world|
   World.create(name: world)
 end
+
+Item.create(name: "Axe", image: "axe0.png", price: 10)
+Item.create(name: "Bracelet", image: "bracelet.png", price: 5)
+Item.create(name: "Healing Leaf", image: "leaf.png", price: 5)
+

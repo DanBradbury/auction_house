@@ -28,5 +28,13 @@ class CreateWorlds < ActiveRecord::Migration[7.1]
       t.json :stats, default: '{"atk": 1, "def": 1}'
     end
     add_reference :pawns, :user, foreign_key: true
+
+    create_table :items do |t|
+      t.string :name
+      t.string :image
+      t.integer :price
+
+      t.timestamps
+    end
   end
 end

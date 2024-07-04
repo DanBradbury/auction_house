@@ -1,0 +1,45 @@
+.shopItems {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.buyList {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.shopItem {
+  background-image: url("GUI/item-frame-orange.png");
+  /*background-image: url("GUI/item-frame-bg.png");*/
+  /*background-size: contain;*/
+  width: 130px;
+  height: 130px;
+  margin-left: 25px;
+  float: left;
+}
+
+.shopItem:hover {
+  background-image: url("GUI/item-frame-white.png");
+}
+
+.shopBg {
+  /*background-image: url("GUI/item-frame-bg.png");*/
+  /*background-image: url("GUI/item-frame-orange.png");*/
+  mask-image: url("GUI/item-frame-mask.png");
+  mask-mode: alpha;
+  background-color: var(--default-bg-color);
+  width: 130px;
+  height: 130px;
+}
+
+.itemInfo {
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  pointer-events: none;
+}

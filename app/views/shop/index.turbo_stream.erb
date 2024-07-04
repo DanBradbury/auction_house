@@ -1,5 +1,24 @@
 <%= turbo_stream.update "action" do %>
   <div data-controller="shop">
+    <div class="shopItems">
     <h2>Shop</h2>
+      <% @items.each do |item| %>
+        <div class="shopItem" data-action="click->shop#addItem mousemove->shop#mouseover mouseout->shop#mouseout">
+          <div class="shopBg">
+            <%= image_tag "items/#{item.image}" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="buyList" data-shop-target="buyList">
+      <h2>Buying</h2>
+    </div>
+
+    <div class="itemInfo" data-shop-target="itemInfo">
+      <h3 data-shop-target="itemName"></h3>
+      <p data-shop-target="itemDescription"></p>
+      <p data-shop-target="itemPrice"></p>
+    </div>
   </div>
 <% end %>
