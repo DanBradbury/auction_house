@@ -47,6 +47,17 @@ body {
   position: absolute;
 }
 
+.game.shop {
+  background-image: url("/GUI/bg-shop.png");
+  background-size: cover;
+  background-position-y: -700px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
 @media only screen and (max-width: 600px) {
   .game {
     background-position-x: -900px;
