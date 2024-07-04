@@ -1,7 +1,17 @@
-<%= turbo_stream.replace "action" do %>
-  <%= turbo_frame_tag "action" do %>
-    <div data-controller="fight">
-      <h1>Here we go</h1>
-    </div>
+<%= turbo_stream.update "action" do %>
+  <div data-controller="fight">
+  <%= render(GeneralButton.new(link: "/pawn", text: "Create Pawn")) %>
+  <hr>
+  <% Current.user.pawns.each do |pawn| %>
+    <%= pawn.name %>
   <% end %>
+  <hr>
+  <%= render(GeneralButton.new(link: "/trigger_fight", text: "Trigger Fight")) %>
+  <hr>
+  <%= turbo_stream_from :logs %>
+    <turbo-frame id="logs">
+    <h2>LOGS</h2>
+    </turbo-frame>
+
+  </div>
 <% end %>

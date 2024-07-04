@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :messages
+  has_many :pawns
 
   def avatar_image
     "#{race.downcase}.png"

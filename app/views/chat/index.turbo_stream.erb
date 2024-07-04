@@ -1,5 +1,4 @@
-<%= turbo_stream.replace "action" do %>
-  <%= turbo_frame_tag "action" do %>
+<%= turbo_stream.update "action" do %>
   <h3>Chat</h3>
   <div id="chat" data-chat-target="messages">
     <div class="chatContainer">
@@ -15,6 +14,5 @@
       <%= hidden_field_tag :sender, Current.user.id %>
     <% end %>
   </footer>
-  <% end %>
 <% end %>
 

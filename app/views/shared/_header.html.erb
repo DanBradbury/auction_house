@@ -1,8 +1,6 @@
 <div class="header">
-  <div class="hud">
-    <%= image_tag Current.user.avatar_image, class: "avatar" %>
-  <span>Welcome <%= link_to Current.user.name, "/profile", class: "username" %></span>
+  <div class="playerProfile">
+    <span class="username"><%= Current.user.name %></span>
   </div>
-  other
   <%= link_to image_tag("GUI/icon_setting.png"), sign_out_url, class: "settings" %>
 </div>

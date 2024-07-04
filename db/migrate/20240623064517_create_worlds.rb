@@ -22,5 +22,11 @@ class CreateWorlds < ActiveRecord::Migration[7.1]
       t.timestamps
     end
     add_reference :messages, :user, foreign_key: true
+
+    create_table :pawns do |t|
+      t.string :name
+      t.json :stats, default: '{"atk": 1, "def": 1}'
+    end
+    add_reference :pawns, :user, foreign_key: true
   end
 end

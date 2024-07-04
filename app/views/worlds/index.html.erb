@@ -1,11 +1,9 @@
 <div class="" data-controller="world">
-  <h1>World List</h1>
   <%= turbo_frame_tag "action" %>
 
   <div class="navigation">
     <%= render(NavigationButton.new(link: "/shop", image: "GUI/icon_castle.png", text: "SHOP")) %>
     <%= render(NavigationButton.new(link: "/chat", image: "GUI/icon_book.png", text: "CHAT")) %>
     <%= render(NavigationButton.new(link: "/fights", image: "GUI/icon_sword.png", text: "FIGHT")) %>
-
   </div>
 </div>

@@ -56,6 +56,9 @@ body {
 
 .header {
   margin-top: 10px;
+  width: 100%;
+  display:inline-block;
+  height: auto;
 }
 
 .borderTest {
@@ -146,6 +149,17 @@ button {
 }
 .button.homeButton:hover {
   text-shadow: 3px 3px 3px black;
+}
+
+.generalButton {
+  background-image: url("/GUI/blue-button1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  text-align: center;
+  padding-top: 26px;
+  cursor: pointer;
 }
 
 .specButton {

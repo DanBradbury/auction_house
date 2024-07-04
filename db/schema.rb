@@ -19,6 +19,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_23_064517) do
     t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
+  create_table "pawns", force: :cascade do |t|
+    t.string "name"
+    t.json "stats", default: "{\"atk\": 1, \"def\": 1}"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_pawns_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "gold", default: 10
@@ -36,4 +43,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_23_064517) do
   end
 
   add_foreign_key "messages", "users"
+  add_foreign_key "pawns", "users"
 end

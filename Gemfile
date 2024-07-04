@@ -4,6 +4,7 @@ ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
+gem 'rack-session', '~> 1.0', '>= 1.0.2'
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
@@ -71,3 +72,4 @@ gem "dotenv"
 gem "thruster"
 gem "kamal"
 gem "view_component"
+gem "resque"

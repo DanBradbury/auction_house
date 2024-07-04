@@ -1,0 +1,12 @@
+.playerProfile {
+  float: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.username {
+  color: white;
+  font-size: xxx-large;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 2px black;
+}

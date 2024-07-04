@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   #resources :fights
   post "/fights", to: "fights#index"
   post "/chat", to: "chat#index"
+  post "/pawn", to: "pawns#index"
+  post "/trigger_fight", to: "fights#trigger"
+  post "/shop", to: "shop#index"
+
   get "/test", to: "users#test"
   get "/sign_out", to: "welcome#sign_out"
   get "/setup", to: "welcome#setup"
