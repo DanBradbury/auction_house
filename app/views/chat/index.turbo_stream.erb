@@ -1,0 +1,20 @@
+<%= turbo_stream.replace "action" do %>
+  <%= turbo_frame_tag "action" do %>
+  <h3>Chat</h3>
+  <div id="chat" data-chat-target="messages">
+    <div class="chatContainer">
+    <%= turbo_stream_from :messages %>
+    <turbo-frame id="messages">
+      <%= render partial: "shared/message", collection: @messages %>
+    </turbo-frame>
+    </div>
+  </div>
+  <footer>
+    <%= form_tag "/messages", remote: true, data: { action: "chat#sendMessage" } do |f| %>
+      <%= text_field_tag :message, nil, data: { "chat-target": "input" }, autocomplete: "off", class: "chatMessage" %>
+      <%= hidden_field_tag :sender, Current.user.id %>
+    <% end %>
+  </footer>
+  <% end %>
+<% end %>
+

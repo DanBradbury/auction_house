@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   root "welcome#index"
   resources :users
   resources :worlds
+  #resources :fights
+  post "/fights", to: "fights#index"
+  post "/chat", to: "chat#index"
   get "/test", to: "users#test"
   get "/sign_out", to: "welcome#sign_out"
   get "/setup", to: "welcome#setup"

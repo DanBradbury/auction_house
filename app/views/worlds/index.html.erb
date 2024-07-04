@@ -1,21 +1,11 @@
 <div class="" data-controller="world">
   <h1>World List</h1>
-
+  <%= turbo_frame_tag "action" %>
 
   <div class="navigation">
-    <div class="button homeButton" data-controller="custom-form" data-action="click->custom-form#submit">
-      <div class="icon">
-        <%= image_tag "GUI/icon_castle.png" %><br>
-        <span>SHOP</span>
-      </div>
-    </div>
+    <%= render(NavigationButton.new(link: "/shop", image: "GUI/icon_castle.png", text: "SHOP")) %>
+    <%= render(NavigationButton.new(link: "/chat", image: "GUI/icon_book.png", text: "CHAT")) %>
+    <%= render(NavigationButton.new(link: "/fights", image: "GUI/icon_sword.png", text: "FIGHT")) %>
 
-    <div class="button homeButton">
-      <div class="icon">
-        <%= image_tag "GUI/icon_book.png" %><br>
-        <span>CHAT</span>
-      </div>
-    </div>
   </div>
-
 </div>

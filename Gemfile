@@ -70,3 +70,4 @@ end
 gem "dotenv"
 gem "thruster"
 gem "kamal"
+gem "view_component"
